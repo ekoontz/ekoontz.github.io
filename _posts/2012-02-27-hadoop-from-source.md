@@ -33,7 +33,7 @@ For me, today, it's
     $ find -name "hadoop-[0-9]*SNAPSHOT.tar.gz"
     ./hadoop-dist/target/hadoop-0.24.0-SNAPSHOT.tar.gz
 
-Back your home directory, and untar the tar.gz:
+Back in your home directory, untar the tar.gz:
 
     $ cd
     $ tar xfz hadoop-common/hadoop-dist/target/hadoop-0.24.0-SNAPSHOT.tar.gz 
