@@ -49,7 +49,9 @@ Now make a symlink to this directory to make your configuration and daemon-runni
 Open the file `hadoop-runtime/etc/hadoop/core-site.xml` in an editor
 and replace it with the following. Change references to `/home/ekoontz/hadoop-runtime` in `yarn.application.classpath` to use your username.
 
-<script src="https://gist.github.com/1933913.js?file=core-site.xml"></script>
+<script src="https://gist.github.com/1933913.js?file=core-site.xml">
+
+</script>
 
 ### Symlinks
 
