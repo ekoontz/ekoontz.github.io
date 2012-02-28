@@ -9,7 +9,7 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Eugene Koontz'z blog
+title : Eugene Koontz's blog
 author :
   name : Eugene Koontz
   email : ekoontz@hiro-tan.org
@@ -40,8 +40,8 @@ JB :
   # Leave this blank if you have defined a CNAME for your site (pages.github.com)
   # NOTE: When in localhost, your site will run from root "/" regardless of BASE_PATH
   #
-  BASE_PATH : "/foo"
-  HOME_PATH : "/bar"
+  BASE_PATH : ""
+  HOME_PATH : "/"
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
