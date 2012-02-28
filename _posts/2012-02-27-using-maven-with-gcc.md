@@ -24,7 +24,7 @@ ability to set a Maven-internal property called
 
     mvn clean install package -DskipTests -Dtar -Dcontainer-executor.additional_cflags="-m32"  -Pdist,native 
 
-The second line of the patch changes the pom.xml at the value stored at the path:
+The second line of the patch changes the pom.xml at the value stored at the XPath:
 
     /project/profiles/profile[id='native']/build/plugins/plugin[artifactId='make-maven-plugin']/configuration/configureEnvironment/property/[name='CFLAGS']/value
 
