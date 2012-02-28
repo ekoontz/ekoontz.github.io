@@ -26,7 +26,7 @@ author :
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 production_url : http://ekoontz.github.com
-
+safe: true
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
@@ -40,8 +40,8 @@ JB :
   # Leave this blank if you have defined a CNAME for your site (pages.github.com)
   # NOTE: When in localhost, your site will run from root "/" regardless of BASE_PATH
   #
-  BASE_PATH : ""
-  HOME_PATH : "/"
+  BASE_PATH : "http://ekoontz.github.com"
+  HOME_PATH : "/HOME_PATH"
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
