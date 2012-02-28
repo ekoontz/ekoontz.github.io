@@ -9,7 +9,7 @@ This is a short guide to getting started with building and running the latest Ha
 
 ## Prerequisites
 
-* [Git](http://git-svn.org)
+* [Git](http://git-scm.org)
 * [Apache Maven 3](http://maven.apache.org/download.html)
 * [Protocol Buffers](https://code.google.com/p/protobuf/downloads/list) version 2.4.1 or later.
 
