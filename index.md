@@ -5,6 +5,8 @@ tagbox: All Posts
 ---
 {% include JB/setup %}
 
+<h2>Welcome</h2>
+
 <p>I hope you find my blog posts interesting and informative.</p>
 
 <ul class="posts">
