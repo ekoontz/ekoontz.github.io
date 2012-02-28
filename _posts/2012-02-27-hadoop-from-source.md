@@ -49,64 +49,7 @@ Now make a symlink to this directory to make your configuration and daemon-runni
 Open the file `hadoop-runtime/etc/hadoop/core-site.xml` in an editor
 and replace it with the following. Change references to `/home/ekoontz/hadoop-runtime` in `yarn.application.classpath` to use your username.
 
-    <configuration>
-      <property>
-        <name>fs.default.replication</name>
-        <value>3</value>
-      </property>
-      <property>
-        <name>fs.defaultFS</name>
-        <value>hdfs://localhost:9000</value>
-      </property>
-      <property>
-        <name>dfs.namenode.name.dir</name>
-        <value>file:///tmp/hadoop/nn</value>
-      </property>
-      <property>
-        <name>dfs.datanode.data.dir</name>
-        <value>file:///tmp/hadoop/dn</value>
-      </property>
-      <property>
-        <name>hadoop.tmp.dir</name>
-        <value>/tmp/hadoop/tmp</value>
-      </property>
-      <property>
-        <name>mapred.local.dir</name>
-        <value>${hadoop.tmp.dir}/mapred/local</value>
-      </property>
-      <property>
-        <name>mapreduce.cluster.local.dir</name>
-        <value>${hadoop.tmp.dir}/mapred/local</value>
-      </property>
-      <property>
-        <name>yarn.nodemanager.local-dirs</name>
-        <value>/tmp/hadoop/nm-local-dirs</value>
-      </property>
-      <property>
-        <name>yarn.nodemanager.aux-services</name>
-        <value>mapreduce.shuffle</value>
-      </property>
-      <property>
-        <name>yarn.resourcemanager.resource-tracker.address</name>
-        <value>localhost:8025</value>
-      </property>
-      <property>
-        <name>yarn.resourcemanager.scheduler.address</name>
-        <value>localhost:8030</value>
-      </property>
-      <property>
-        <name>yarn.resourcemanager.address</name>
-        <value>localhost:8040</value>
-      </property>
-      <property>
-        <name>mapreduce.framework.name</name>
-        <value>yarn</value>
-      </property>
-      <property>
-        <name>yarn.application.classpath</name>
-        <value>/home/ekoontz/hadoop-runtime/share/hadoop/common/*:/home/ekoontz/hadoop-runtime/share/hadoop/common/lib/*:/home/ekoontz/hadoop-runtime/share/hadoop/mapreduce/*:/home/ekoontz/hadoop-runtime/share/hadoop/mapreduce/lib/*:/home/ekoontz/hadoop-runtime/share/hadoop/hdfs/*:/home/ekoontz/hadoop-runtime/share/hadoop/hdfs/lib/*</value>
-      </property>
-    </configuration>  
+<script src="https://gist.github.com/1933913.js?file=core-site.xml"></script>
 
 ### Symlinks
 
