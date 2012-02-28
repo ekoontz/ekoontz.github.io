@@ -38,7 +38,7 @@ Back in your home directory, untar the tar.gz:
     $ cd
     $ tar xfz hadoop-common/hadoop-dist/target/hadoop-0.24.0-SNAPSHOT.tar.gz 
 
-You will now have a Make a symlink to this directory to make your configuration and daemon-running simpler:
+Now make a symlink to this directory to make your configuration and daemon-running simpler:
 
     $ ln -s hadoop-0.24.0-SNAPSHOT hadoop-runtime
 
