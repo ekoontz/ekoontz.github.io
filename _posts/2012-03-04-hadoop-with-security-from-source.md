@@ -67,3 +67,68 @@ Kerberos principals, which will be necessary below.
 * Starting the Hadoop datanode securely requires root access.
 (though, why?)
 
+# Secure core-site.xml
+
+<script src="https://gist.github.com/1974868.js">
+
+</script>
+
+
+
+
+# Secure environment variables
+
+    YARN_OPTS=-DHADOOP_JAAS_DEBUG=true \
+              -Dsun.net.spi.nameservice.provider.1=dns,sun\
+              -Djava.security.krb5.realm=HADOOP.LOCALDOMAIN \
+              -Djava.security.krb5.kdc=mac.foofers.org 
+
+    HADOOP_OPTS=-DHADOOP_JAAS_DEBUG=true \
+              -Dsun.net.spi.nameservice.provider.1=dns,sun 
+              -Djava.security.krb5.realm=HADOOP.LOCALDOMAIN \
+              -Djava.security.krb5.kdc=mac.foofers.org
+
+
+# Troubleshooting
+
+You may see something like:
+
+<script src="https://gist.github.com/1977116.js" style="height:5em">
+
+</script>
+
+Note the long pause in log message timestamps between `22:41:13` and
+`22:42:44`. This indicates that the Kerberos server could not be
+reached. Check to see that the hostname `H` given in your
+`-Djava.security.kerb5.krc=H` is reachable: do `telnet H 88`. If this
+succeeds, then the Kerberos server is probably working ok : the
+problem is that Java is unable to resolve H to the correct IP. Check
+to make sure that `-Dsun.net.spi.nameservice.provider.1=dns,sun` is
+set.
+
+For more on DNS and Java interaction, have a look at my
+[hostname-testing Github
+repository](https://github.com/ekoontz/hostname-testing), which has
+some sample code to test interactions between Java and DNS.
+
+# Related Material
+
+[hostname-testing](https://github.com/ekoontz/hostname-testing), sample code
+to test interactions between Java and DNS.
+
+[jaas_and_kerberos](https://github.com/ekoontz/jaas_and_kerberos), sample code
+to test interactions between Java, JAAS, and Kerberos.
+
+[Up and Running With Secure
+Zookeeper](https://github.com/ekoontz/zookeeper/wiki), another guide
+to getting started with a sample Kerberos setup (and how to integrate
+Zookeeper with it).
+
+# Tips
+
+In a terminal window, run the following and keep it where you can watch it:
+
+    sudo tail -f /var/log/krb5kdc/kdc.log
+
+
+
