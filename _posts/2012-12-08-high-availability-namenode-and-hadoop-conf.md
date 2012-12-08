@@ -25,7 +25,7 @@ Its advantages are:
 - Modifies core system properties on a Linux VM,
   avoiding any need for modifications to your main development OS (*but see Caveat below)
 - Works disconnected from the Internet (if you are working while you commute on BART or Caltrain and have spotty or no Internet connection you'll appreciate this)
-- Works with security (Kerberos)
+- Enables secure Hadoop configuration (i.e. sets up a local Kerberos infrastructure and uses it)
 - Facilitates the following development cycle:
 
 1. Configure and install hadoop (`make install`)
