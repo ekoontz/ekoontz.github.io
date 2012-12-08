@@ -65,9 +65,9 @@ I am working on adding support for:
 
 # Historical Background
 
-The umbrella JIRA is: [Umbrella Jira for HDFS-HA Phase 2](https://issues.apache.org/jira/browse/HDFS-3278).
+The umbrella JIRA is: [HDFS-3278 Umbrella Jira for HDFS-HA Phase 2](https://issues.apache.org/jira/browse/HDFS-3278).
 
-The predecessor of this umbrella JIRA is: [High Availability Framework
+The predecessor of this umbrella JIRA is: [HDFS-1623 High Availability Framework
 for HDFS NN](https://issues.apache.org/jira/browse/HDFS-1623)
 
 Note that HDFS-3278 mentions that there are two phases to HA NN. The
