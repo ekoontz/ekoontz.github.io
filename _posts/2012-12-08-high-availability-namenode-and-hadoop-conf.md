@@ -12,18 +12,19 @@ within [hadoop-conf](https://github.com/ekoontz/hadoop-conf).
 # hadoop-conf
 
 First, some background on
-[hadoop-conf](https://github.com/ekoontz/hadoop-conf/blob/master/README). It's my local
-Hadoop deployment setup tool. It's a Makefile with some shell scripts
-and XSL templates. It just developed slowly over the past year to ease
-development with Hadoop. 
+[hadoop-conf](https://github.com/ekoontz/hadoop-conf/blob/master/README). It's
+my Hadoop-on-a-laptop deployment setup tool, simply a Makefile with some
+shell scripts and XSL templates. It just developed slowly over the
+past year to ease development with Hadoop.
 
 Its advantages are:
 
 - Generates Hadoop configurations in a developer-friendly
- (i.e. hackable) way using a [Makefile](http://gnu.org/software/make).
-- Configures difficult system services (DNS, Kerberos, ntpd, ntpclient).  
+ (i.e. hackable) way using a [Makefile](http://gnu.org/software/make)
+- Configures difficult-to-configure system services (DNS, Kerberos, ntpd, ntpclient)
 - Modifies core system properties on a Linux VM,
   avoiding any need for modifications to your main development OS (*but see Caveat below)
+- Works disconnected from the Internet (if you are working while you commute on BART or Caltrain and have spotty or no Internet connection you'll appreciate this)
 - Works with security (Kerberos)
 - Facilitates the following development cycle:
 
