@@ -57,7 +57,7 @@ or, opting for certainty of development speed):
 
 # High Availability Namenode
 
-I am working on adding support with hadoop-conf for: 
+I am working on adding support within hadoop-conf for: 
 
 - [HDFS-3077 Quorum-based protocol for reading and writing edit logs](https://issues.apache.org/jira/browse/HDFS-3077)
 - [HDFS 3042 Automatic failover support for NN HA](https://issues.apache.org/jira/browse/HDFS-3042)
