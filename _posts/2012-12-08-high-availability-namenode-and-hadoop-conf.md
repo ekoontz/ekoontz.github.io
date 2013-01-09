@@ -23,7 +23,7 @@ Its advantages are:
  (i.e. hackable) way using a [Makefile](http://gnu.org/software/make)
 - Configures difficult-to-configure system services (DNS, Kerberos, ntpd, ntpclient)
 - Modifies core system properties on a Linux VM,
-  avoiding any need for modifications to your main development OS (*but see Caveat below)
+  avoiding any need for modifications to your main development OS (* but see Caveat below)
 - Works disconnected from the Internet (if you are working while you commute on BART or Caltrain and have spotty or no Internet connection you'll appreciate this)
 - Enables secure Hadoop configuration (i.e. sets up a local Kerberos infrastructure and uses it)
 - Facilitates the following development cycle:
