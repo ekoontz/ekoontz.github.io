@@ -8,9 +8,10 @@ tags: []
 
 # first section
 
-Paragraph
+Hello, welcome to my blog post. I can type in `fixed-width font`. I can include gists like:
 
-Paragraph
+<script src="http://gist.github.com/1977116.js" style="height:5em">
+</script>
 
 [Link Title](link href)
 
