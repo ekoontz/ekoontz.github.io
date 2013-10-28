@@ -2,7 +2,7 @@
 layout: post
 title: "Hadoop on a single host"
 category:
-tags: [hadoop guide]
+tags: [hadoop,guide]
 ---
 {% include JB/setup %}
 
