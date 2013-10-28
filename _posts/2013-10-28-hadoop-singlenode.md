@@ -6,10 +6,7 @@ tags: [hadoop guide]
 ---
 {% include JB/setup %}
 
-# Hadoop on a single host
-
-
-## Install Hadoop distribution
+# Install Hadoop distribution
 
 First, download the [binary
 tarball](http://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-1.2.1/hadoop-1.2.1.tar.gz)
