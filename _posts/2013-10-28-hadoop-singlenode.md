@@ -26,7 +26,7 @@ You should now have a `hadoop-1.2.1` directory:
 
 # HDFS
 
-## `hdfs-site.xml`
+## Edit `hdfs-site.xml`
 
 Within this directory, find the file `conf/hdfs-site.xml` and use a text editor to change the file
 to have the following contents:
@@ -114,7 +114,7 @@ The output from the above should look similar to the following:
 
 # MapReduce
 
-## `mapred-site.xml`
+## Edit `mapred-site.xml`
 
 Within the `hadoop-1.2.1` directory, find the file
 `conf/mapred-site.xml` and use a text editor to change the file to
