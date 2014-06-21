@@ -28,11 +28,11 @@ larger-scale deployments:
 
 # Build
 
-```git clone https://github.com/apache/hadoop-common.git
-cd hadoop-common
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
-export PATH=$JAVA_HOME/bin:$PATH
-java -version```
+  git clone https://github.com/apache/hadoop-common.git
+  cd hadoop-common
+  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
+  export PATH=$JAVA_HOME/bin:$PATH
+  java -version
 
 Should return:
    
