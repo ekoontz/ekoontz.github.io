@@ -27,18 +27,18 @@ larger-scale deployments:
 - No High-Availability.
 
 # Build
-
-  git clone https://github.com/apache/hadoop-common.git
-  cd hadoop-common
-  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
-  export PATH=$JAVA_HOME/bin:$PATH
-  java -version
+  
+    git clone https://github.com/apache/hadoop-common.git
+    cd hadoop-common
+    export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
+    export PATH=$JAVA_HOME/bin:$PATH
+    java -version
 
 Should return:
    
-```java version "1.7.0_51"
-Java(TM) SE Runtime Environment (build 1.7.0_51-b13)
-Java HotSpot(TM) 64-Bit Server VM (build 24.51-b03, mixed mode)```
+    java version "1.7.0_51"
+    Java(TM) SE Runtime Environment (build 1.7.0_51-b13)
+    Java HotSpot(TM) 64-Bit Server VM (build 24.51-b03, mixed mode)
 
 These last two odd-looking commands are from
 [BUILDING.txt](https://github.com/apache/hadoop-common/blob/a1bb521c766895fadd507ea1147c6cb935da07c4/BUILDING.txt)
@@ -58,12 +58,12 @@ so they look like the below.
 
 ## ```core-site.xml```
 
-```<configuration>
-  <property>
-    <name>fs.default.name</name>
-    <value>hdfs://localhost:8020</value>
-  </property>
-</configuration>```
+    <configuration>
+        <property>
+            <name>fs.default.name</name>
+            <value>hdfs://localhost:8020</value>
+        </property>
+    </configuration>
 
 
 ## ```mapreduce-site.xml```
