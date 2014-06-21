@@ -34,7 +34,7 @@ larger-scale deployments:
     export PATH=$JAVA_HOME/bin:$PATH
     java -version
 
-Should return:
+The last command returns (for me):
    
     java version "1.7.0_51"
     Java(TM) SE Runtime Environment (build 1.7.0_51-b13)
