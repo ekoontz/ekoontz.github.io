@@ -13,7 +13,9 @@ everything (HDFS + MapReduce) working. The good news is, it's gotten
 really easy!
 
 <div style="float:right">
-  <img src="/assets/images/hdfs-3-0-snapshot.png" alt="HDFS in-browser screenshot" style="width: 200px;"/>
+  <a href="/assets/images/hdfs-3-0-snapshot.png">
+    <img src="/assets/images/hdfs-3-0-snapshot.png" alt="HDFS in-browser screenshot" style="width: 500px;"/>
+  </a>
 </div>
 
 ## Reservations
