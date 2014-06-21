@@ -12,7 +12,9 @@ I decided to revist Hadoop trunk today to see how easy it is to get
 everything (HDFS + MapReduce) working. The good news is, it's gotten
 really easy!
 
-![Alt HDFS in-browser screenshot](/assets/images/hdfs-3-0-snapshot.png "HDFS in-browser screenshot" =250x)
+<div style="float:right">
+  <img src="/assets/images/hdfs-3-0-snapshot.png" alt="HDFS in-browser screenshot" style="width: 200px;"/>
+</div>
 
 ## Reservations
 
