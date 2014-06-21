@@ -6,22 +6,23 @@ tags: []
 ---
 {% include JB/setup %}
 
+
+<div style="float:right">
+  <a href="/assets/images/hdfs-3-0-snapshot.png">
+    <img src="/assets/images/hdfs-3-0-snapshot.png" alt="HDFS in-browser screenshot" style="width: 300px;"/>
+  </a>
+
+  <a href="/assets/images/yarn-3-0-snapshot.png">
+    <img src="/assets/images/yarn-3-0-snapshot.png" alt="YARN in-browser screenshot" style="width: 300px;"/>
+  </a>
+
+</div>
+
 # Introduction
 
 I decided to revist Hadoop trunk today to see how easy it is to get
 everything (HDFS + MapReduce) working. The good news is, it's gotten
 really easy!
-
-<div style="float:right">
-  <a href="/assets/images/hdfs-3-0-snapshot.png">
-    <img src="/assets/images/hdfs-3-0-snapshot.png" alt="HDFS in-browser screenshot" style="width: 500px;"/>
-  </a>
-
-  <a href="/assets/images/yarn-3-0-snapshot.png">
-    <img src="/assets/images/yarn-3-0-snapshot.png" alt="YARN in-browser screenshot" style="width: 500px;"/>
-  </a>
-
-</div>
 
 ## Reservations
 
