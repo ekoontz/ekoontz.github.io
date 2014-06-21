@@ -28,24 +28,24 @@ larger-scale deployments:
 
 # Build
 
-  git clone https://github.com/apache/hadoop-common.git
-  cd hadoop-common
-  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
-  export PATH=$JAVA_HOME/bin:$PATH
-  java -version	   
+```git clone https://github.com/apache/hadoop-common.git
+cd hadoop-common
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
+export PATH=$JAVA_HOME/bin:$PATH
+java -version```
 
 Should return:
    
-   java version "1.7.0_51"
-   Java(TM) SE Runtime Environment (build 1.7.0_51-b13)
-   Java HotSpot(TM) 64-Bit Server VM (build 24.51-b03, mixed mode)
+```java version "1.7.0_51"
+Java(TM) SE Runtime Environment (build 1.7.0_51-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 24.51-b03, mixed mode)```
 
 These last two odd-looking commands are from
 [BUILDING.txt](https://github.com/apache/hadoop-common/blob/a1bb521c766895fadd507ea1147c6cb935da07c4/BUILDING.txt)
 	   
-   sudo mkdir $JAVA_HOME/Classes
-   sudo ln -s /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/lib/tools.jar /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/Classes/classes.jar
-    mvn package -Pdist -DskipTests -Dtar
+```sudo mkdir $JAVA_HOME/Classes
+sudo ln -s /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/lib/tools.jar /Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/Classes/classes.jar
+mvn package -Pdist -DskipTests -Dtar```
 
 The ```-Dtar``` is probably not needed for what we are doing here, but
 would be useful if you want to reproduce on several hosts for testing at-scale.
@@ -58,31 +58,31 @@ so they look like the below.
 
 ## ```core-site.xml```
 
-   <configuration>
-      <property>
-        <name>fs.default.name</name>
-        <value>hdfs://localhost:8020</value>
-      </property>
-   </configuration>
+```<configuration>
+  <property>
+    <name>fs.default.name</name>
+    <value>hdfs://localhost:8020</value>
+  </property>
+</configuration>```
 
 
 ## ```mapreduce-site.xml```
 
-   <configuration>
-      <property>
-         <name>mapreduce.framework.name</name>
-	 <value>yarn</value>
-      </property>
-   </configuration>
+```<configuration>
+  <property>
+    <name>mapreduce.framework.name</name>
+    <value>yarn</value>
+  </property>
+</configuration>```
 
 ## ```yarn-site.xml```
 
-   <configuration>
-       <property>
-          <name>yarn.nodemanager.aux-services</name>
-          <value>mapreduce_shuffle</value>
-       </property>
-   </configuration>
+```<configuration>
+  <property>
+    <name>yarn.nodemanager.aux-services</name>
+    <value>mapreduce_shuffle</value>
+  </property>
+</configuration>```
 
 ## ```hdfs-site.xml```
 
@@ -95,18 +95,18 @@ Can be left as-is (i.e. empty).
 In ```hadoop-dist/target/hadoop-3.0.0-SNAPSHOT/bin```, create a file
 ```start.sh``` that looks like:
 
-           #!/bin/sh
-           ps -ef | grep java | egrep Node\|Manager\|HistoryServer | awk '{print $2}' | xargs kill
-           bin/hdfs namenode &
-           bin/hdfs datanode &
-	   bin/yarn timelineserver &
-	   bin/yarn resourcemanager &
-	   bin/yarn nodemanager &
+```#!/bin/sh
+ps -ef | grep java | egrep Node\|Manager\|HistoryServer | awk '{print $2}' | xargs kill
+bin/hdfs namenode &
+bin/hdfs datanode &
+bin/yarn timelineserver &
+bin/yarn resourcemanager &
+bin/yarn nodemanager &```
 
 ## Format NN
 
-           cd hadoop-dist/target/hadoop-3.0.0-SNAPSHOT           
-           bin/hdfs namenode -format 	       
+```cd hadoop-dist/target/hadoop-3.0.0-SNAPSHOT           
+bin/hdfs namenode -format``` 	       
 
 ## Start all daemons!
 
