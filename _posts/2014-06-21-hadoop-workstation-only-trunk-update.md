@@ -13,7 +13,7 @@ everything (HDFS + MapReduce) working. The good news is, it's gotten
 really easy!
 
 ![Alt HDFS in-browser screenshot](/assets/images/hdfs-3-0-snapshot.png
- "HDFS in-browser screenshot")
+ "HDFS in-browser screenshot" =250x)
 
 ## Reservations
 
