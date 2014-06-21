@@ -73,7 +73,7 @@ so they look like the below.
         <name>mapreduce.framework.name</name>
         <value>yarn</value>
       </property>
-    </configuration>```
+    </configuration>
 
 ## ```yarn-site.xml```
 
