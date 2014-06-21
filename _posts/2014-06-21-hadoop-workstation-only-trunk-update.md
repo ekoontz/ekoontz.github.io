@@ -16,6 +16,11 @@ really easy!
   <a href="/assets/images/hdfs-3-0-snapshot.png">
     <img src="/assets/images/hdfs-3-0-snapshot.png" alt="HDFS in-browser screenshot" style="width: 500px;"/>
   </a>
+
+  <a href="/assets/images/yarn-3-0-snapshot.png">
+    <img src="/assets/images/yarn-3-0-snapshot.png" alt="YARN in-browser screenshot" style="width: 500px;"/>
+  </a>
+
 </div>
 
 ## Reservations
