@@ -7,15 +7,17 @@ tags: []
 {% include JB/setup %}
 
 
-<div style="float:right">
+<div>
+<div style="float:left">
   <a href="/assets/images/hdfs-3-0-snapshot.png">
     <img src="/assets/images/hdfs-3-0-snapshot.png" alt="HDFS in-browser screenshot" style="width: 300px;"/>
   </a>
-
+</div>
+<div style="float:right">
   <a href="/assets/images/yarn-3-0-snapshot.png">
     <img src="/assets/images/yarn-3-0-snapshot.png" alt="YARN in-browser screenshot" style="width: 300px;"/>
   </a>
-
+</div>
 </div>
 
 # Introduction
